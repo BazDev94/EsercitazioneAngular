@@ -1,1 +1,17 @@
-<app-primo-componente></app-primo-componente>
+<div class="container">
+    <div class="row">
+        <div class="col-sm">
+            <primo-componente></primo-componente>
+        </div>
+        <div class="col-sm">
+            <componente-input [dato]="' incastro medico'"></componente-input>
+        </div>
+        <div class="col-sm">
+            <componente-output (evento)="loggaEvento($event)"></componente-output>
+        </div>
+        <div class="col-sm">
+            <secondo-componente [dato2]="datoPerSecondoComponente" (clickBottone)="loggaEvento($event)">
+            </secondo-componente>
+        </div>
+    </div>
+</div>
